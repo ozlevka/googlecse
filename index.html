@@ -1,18 +1,17 @@
-<html>
-<head>
-	<script type="text/javascript">
-
-	</script>
-</head>
-<body>
-	<div id="cse-search-results"></div>
-	<script type="text/javascript">
-	  var googleSearchIframeName = "cse-search-results";
-	  var googleSearchFormName = "cse-search-box";
-	  var googleSearchFrameWidth = 600;
-	  var googleSearchDomain = "www.google.com";
-	  var googleSearchPath = "/cse";
-	</script>
-	<script type="text/javascript" src="http://www.google.com/afsonline/show_afs_search.js"></script>
-</body>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Поиск по книжным сайтам</title>
+    <script src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load('search', '1');
+        google.setOnLoadCallback(function(){
+          new google.search.CustomSearchControl('011441386004946556757:d2z-2ly-66i', {}).draw('cse');
+        }, true);
+    </script>
+  </head>
+  <body style="font-family: Arial;border: 0 none;">
+    <div id="cse" style="width:100%;">Loading...</div>
+  </body>
 </html>
